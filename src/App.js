@@ -24,6 +24,13 @@ import FormComponent from './components/FormComponent';
 import Lifecycle from './components/Lifecycle';
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentinput from './components/FRParentInput'
+import HeroParent from './components/HeroParent';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import GetPostList from './components/GetPostList';
 
 //for name exports curly braces is required
 //if we don't do name export we can export function with any name
@@ -31,8 +38,15 @@ import ParentComp from './components/ParentComp';
 function App() {
   return (
     <div className="App">
+      {/* <ClickCounter name='Regal'/>
+      <HoverCounter /> */}
+      <GetPostList />
+      {/* <HeroParent /> */}
       {/* <Table /> */}
-      <ParentComp></ParentComp>
+      {/* <RefsDemo></RefsDemo> */}
+      {/* <FocusInput /> */}
+      {/* <FRParentinput /> */}
+      {/* <ParentComp></ParentComp> */}
       {/* <Lifecycle></Lifecycle> */}
       {/* <FormComponent></FormComponent> */}
       {/* <h1 className='error'>Error</h1>

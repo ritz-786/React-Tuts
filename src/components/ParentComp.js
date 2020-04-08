@@ -1,6 +1,9 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, Component } from 'react'
 import RegComp from './RegComp'
 import PureComp from './PureComp'
+import MemoComp from './MemoComp'
+
+// making parent Component pure make their child component pure too
 
 export class ParentComp extends PureComponent {
 
@@ -25,8 +28,9 @@ export class ParentComp extends PureComponent {
         return (
             <div>
                 Parent Component
-                <RegComp name = {this.state.name}/>
-                <PureComp name = {this.state.name}></PureComp>
+                <MemoComp name = {this.props.name}/>
+                {/* <RegComp name = {this.state.name}/>
+                <PureComp name = {this.state.name}></PureComp> */}
             </div>
         )
     }
